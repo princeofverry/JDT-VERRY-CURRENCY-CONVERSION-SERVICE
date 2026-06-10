@@ -1,8 +1,10 @@
 package com.indivaragroup.jdt17.currency.conversion.controller;
 
 import com.indivaragroup.jdt17.currency.conversion.config.RateProperties;
+import com.indivaragroup.jdt17.currency.conversion.data.AppInfoResponse;
 import com.indivaragroup.jdt17.currency.conversion.data.ConversionRequest;
 import com.indivaragroup.jdt17.currency.conversion.data.ConversionResponse;
+import com.indivaragroup.jdt17.currency.conversion.data.ProfileResponse;
 import com.indivaragroup.jdt17.currency.conversion.service.ConverterService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -35,24 +37,18 @@ public class ConverterController {
     }
 
     @GetMapping("/info")
-    public Map<String, String> info (
+    public AppInfoResponse info (
             @Value("${app.name}")
             String appName) {
-        return Map.of(
-                "applicationName",
-                appName
-        );
+        return new AppInfoResponse(appName);
     }
 
     @Value("${app.message}")
     private String message;
 
     @GetMapping("/profile")
-    public Map<String, String> profile() {
-        return Map.of(
-                "message",
-                message
-        );
+    public ProfileResponse profile() {
+        return new ProfileResponse(message);
     }
 
     @GetMapping("/rates")
