@@ -1,3 +1,13 @@
 spring:
   application:
     name: jdt17.currency.conversion
+
+app:
+  name: ${APP_NAME:Unknown Application}
+
+currency:
+  rates:
+    USD_IDR: 16000
+    IDR_USD: 0.0000625
+    SGD_IDR: 12500
+    IDR_SGD: 0.00008

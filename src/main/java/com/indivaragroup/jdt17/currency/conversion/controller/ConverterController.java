@@ -1,8 +1,8 @@
 package com.indivaragroup.jdt17.currency.conversion.controller;
 
 import com.indivaragroup.jdt17.currency.conversion.config.RateProperties;
-import com.indivaragroup.jdt17.currency.conversion.dto.ConversionRequest;
-import com.indivaragroup.jdt17.currency.conversion.dto.ConversionResponse;
+import com.indivaragroup.jdt17.currency.conversion.data.ConversionRequest;
+import com.indivaragroup.jdt17.currency.conversion.data.ConversionResponse;
 import com.indivaragroup.jdt17.currency.conversion.service.ConverterService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

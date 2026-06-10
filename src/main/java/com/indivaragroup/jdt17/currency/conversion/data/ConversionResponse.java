@@ -1,4 +1,4 @@
-package com.indivaragroup.jdt17.currency.conversion.dto;
+package com.indivaragroup.jdt17.currency.conversion.data;
 
 import lombok.Builder;
 import lombok.Data;

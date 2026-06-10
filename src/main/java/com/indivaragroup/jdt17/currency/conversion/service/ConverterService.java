@@ -2,7 +2,7 @@ package com.indivaragroup.jdt17.currency.conversion.service;
 
 import com.indivaragroup.jdt17.currency.conversion.config.RateProperties;
 import com.indivaragroup.jdt17.currency.conversion.converter.CurrencyConverter;
-import com.indivaragroup.jdt17.currency.conversion.dto.ConversionResponse;
+import com.indivaragroup.jdt17.currency.conversion.data.ConversionResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
